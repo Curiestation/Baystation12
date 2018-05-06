@@ -1656,6 +1656,10 @@
 	icon_state = "bordercolor";
 	dir = 8
 	},
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
 "dj" = (
@@ -2161,6 +2165,10 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/common)
 "ee" = (
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/curie/crew/kitchen)
 "ef" = (
@@ -6072,31 +6080,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
-"rM" = (
-/turf/simulated/wall,
-/area/space)
-"sa" = (
-/obj/structure/table/standard,
-/obj/item/stack/package_wrap,
-/obj/item/stack/material/cardboard/ten,
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/green/border,
-/turf/simulated/floor/tiled,
-/area/space)
-"sR" = (
-/obj/structure/table/standard,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/effect/floor_decal/borderfloor{
-	dir = 6;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/green/border{
-	icon_state = "bordercolor";
-	dir = 6
-	},
-/turf/simulated/floor/tiled,
-/area/space)
 "ta" = (
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
@@ -6174,27 +6157,6 @@
 /obj/machinery/door/airlock/autoname,
 /turf/simulated/floor,
 /area/ship/curie/maintenance/atmos)
-"El" = (
-/obj/item/modular_computer/console/preset/civilian,
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/green/border,
-/obj/machinery/light/spot,
-/turf/simulated/floor/tiled,
-/area/space)
-"HN" = (
-/obj/structure/bed/chair/office/light,
-/turf/simulated/floor/tiled,
-/area/space)
-"HX" = (
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/green/border,
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -24
-	},
-/turf/simulated/floor/tiled,
-/area/space)
 "KY" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -6232,9 +6194,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
-"Sm" = (
-/turf/simulated/floor,
-/area/space)
 "SK" = (
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
@@ -6250,27 +6209,6 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor,
 /area/ship/curie/merchant)
-"SS" = (
-/obj/structure/table/standard,
-/obj/item/weapon/tape_roll,
-/obj/effect/floor_decal/borderfloor{
-	dir = 4;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/green/border{
-	icon_state = "bordercolor";
-	dir = 4
-	},
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 6;
-	icon_state = "borderfloorcorner2_white"
-	},
-/obj/random/snack,
-/turf/simulated/floor/tiled,
-/area/space)
-"Tb" = (
-/turf/simulated/floor/tiled,
-/area/space)
 
 (1,1,1) = {"
 aa
@@ -15828,10 +15766,10 @@ aa
 aa
 aa
 aa
-Tb
-HX
-rM
-Tb
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -15950,10 +15888,10 @@ aa
 aa
 aa
 aa
-Sm
-El
-rM
-Tb
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -16072,10 +16010,10 @@ aa
 aa
 aa
 aa
-HN
-sa
-rM
-Tb
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -16194,10 +16132,10 @@ aa
 aa
 aa
 aa
-SS
-sR
-rM
-Tb
+aa
+aa
+aa
+aa
 aa
 aa
 aa
