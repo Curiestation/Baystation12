@@ -9,8 +9,8 @@
 	dock_name     = "Omega-682 Dockyard"
 	boss_name     = "Civil Overwatch"
 	boss_short    = "Overwatch"
-	company_name  = "WM Scavengers Ltd."
-	company_short = "WMS"
+	company_name  = "Star Company"
+	company_short = "SCOM"
 
 	station_levels = list(1,2,3)
 	contact_levels = list(1,2,3)
