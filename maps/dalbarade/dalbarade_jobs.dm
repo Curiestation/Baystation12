@@ -12,7 +12,8 @@
 	/datum/job/cyborg,
 	/datum/job/assistant)
 	species_to_job_whitelist = list(
-		/datum/species/vox = list(/datum/job/assistant)
+		/datum/species/nabber = list(/datum/job/assistant, /datum/job/mercenary, /datum/job/engineer)
+		/datum/species/skrell = list(/datum/job/assistant, /datum/job/doctor, /datum/job/rd)
 	)
 
 /datum/job/captain
@@ -41,18 +42,18 @@
 	verbs -= /client/proc/rename_ship
 
 /client/proc/rename_company()
-	set name = "Rename Company"
+	set name = "Rename Group"
 	set category = "Captain's Powers"
-	var/company = sanitize(input(src, "What should your enterprise be called?", "Company name", GLOB.using_map.company_name), MAX_NAME_LEN)
+	var/company = sanitize(input(src, "What should your group be called?", "Group name", GLOB.using_map.company_name), MAX_NAME_LEN)
 	if(!company)
 		return
-	var/company_s = sanitize(input(src, "What's the short name for it?", "Company name", GLOB.using_map.company_short), MAX_NAME_LEN)
+	var/company_s = sanitize(input(src, "What's the short name for it?", "Group name", GLOB.using_map.company_short), MAX_NAME_LEN)
 	if(company != GLOB.using_map.company_name)
 		if (company)
 			GLOB.using_map.company_name = company
 		if(company_s)
 			GLOB.using_map.company_short = company_s
-		command_announcement.Announce("Congratulations to all employees of [capitalize(GLOB.using_map.company_name)] on the new name. Their rebranding has changed the [GLOB.using_map.company_short] market value by [0.01*rand(-10,10)]%.", "Company name change approved")
+		command_announcement.Announce("Congratulations to all members of [capitalize(GLOB.using_map.company_name)] on the new name. Their renaming has been registered by all governments and their military.", "Group name change acknowledged")
 	verbs -= /client/proc/rename_company
 
 /datum/job/captain/get_access()
