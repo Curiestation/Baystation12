@@ -10,7 +10,7 @@
 	boss_name     = "Civil Overwatch"
 	boss_short    = "Overwatch"
 	company_name  = "Star Company"
-	company_short = "SCOM"
+	company_short = "StarC"
 
 	station_levels = list(1,2,3)
 	contact_levels = list(1,2,3)
@@ -20,6 +20,8 @@
 	overmap_event_areas = 18
 
 	default_law_type = /datum/ai_laws/corporate
+	usable_email_tlds = list("freemail.nt", "coolmail.com", "masscomm.int")
+	map_admin_faxes = list("Civil Overwatch C58 Office")
 
 	evac_controller_type = /datum/evacuation_controller/lifepods
 	lobby_icon = 'maps/example/example_lobby.dmi'
@@ -48,10 +50,12 @@
 	salary_modifier = 0.2
 
 
-/datum/map/overmap_example/map_info(victim)
-	to_chat(victim, "You're aboard the <b>[station_name],</b> an independent vessel, on a SPACE FRONTIER. No major corporation or government has laid claim on the planets in this sector, so their exploitation is entirely up to you - mine, poach and deforest all you want.")
+/datum/map/dalbarade/map_info(victim)
+	to_chat(victim, "<h2>Current map information</h2>")
+	to_chat(victim, "<b>|EN|</b> You're aboard the <b>[station_name],</b> an independent vessel, currently in <b>abandonned sector Corona</b> (coordinates C588555-5) notorious for its dangers, artifacts and mysteries. No major corporation or government has laid claim on this sector, so no official laws apply here.")
+	to_chat(victim, "<b>|FR|</b> Vous êtes à bord du <b>[station_name],</b> un vaisseau indépendant, actuellement situé dans le <b>secteur abandonné Corona</b> (coordonnées 588555-5) connu pour ses dangers, artefacts et mystères. Aucune corporation ni aucun gouvernement n'a réclamé ce secteur, donc aucune loi ne s'applique ici.")
 
-/datum/map/overmap_example/setup_map()
+/datum/map/dalbarade/setup_map()
 	..()
 	GLOB.traders += new /datum/trader/xeno_shop
 	GLOB.traders += new /datum/trader/medical
