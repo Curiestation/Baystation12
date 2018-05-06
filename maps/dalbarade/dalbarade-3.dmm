@@ -136,6 +136,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/clothing/gloves/nabber,
+/obj/item/clothing/gloves/nabber,
 /turf/simulated/floor/tiled,
 /area/ship/curie/maintenance/power)
 "aw" = (
@@ -276,6 +278,7 @@
 	layer = 2.4;
 	level = 2
 	},
+/obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled,
 /area/ship/curie/maintenance/power)
 "aK" = (
@@ -359,6 +362,7 @@
 /obj/effect/landmark/start{
 	name = "Ship Engineer"
 	},
+/obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled,
 /area/ship/curie/maintenance/power)
 "aT" = (
@@ -404,6 +408,10 @@
 "aZ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/maintenance/power)
@@ -455,21 +463,6 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/power)
-"be" = (
-/obj/effect/floor_decal/industrial/warning/corner,
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/power)
-"bf" = (
-/obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/power)
-"bg" = (
-/obj/effect/floor_decal/industrial/warning/corner{
-	icon_state = "warningcorner";
-	dir = 8
-	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/maintenance/power)
 "bh" = (
@@ -538,7 +531,7 @@
 	icon_state = "0-4";
 	d2 = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/ship/curie/maintenance/power)
 "bo" = (
 /obj/machinery/door/blast/regular/open{
@@ -554,7 +547,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/ship/curie/maintenance/power)
 "bp" = (
 /obj/structure/cable{
@@ -564,7 +557,7 @@
 	pixel_x = 0
 	},
 /obj/machinery/light/small,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/ship/curie/maintenance/power)
 "bq" = (
 /obj/structure/cable{
@@ -574,7 +567,7 @@
 	pixel_x = 0
 	},
 /obj/machinery/meter/turf,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/ship/curie/maintenance/power)
 "br" = (
 /obj/machinery/door/blast/regular/open{
@@ -598,7 +591,7 @@
 	icon_state = "left";
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/ship/curie/maintenance/power)
 "bs" = (
 /obj/structure/cable{
@@ -606,10 +599,6 @@
 	d2 = 8;
 	icon_state = "4-8";
 	pixel_x = 0
-	},
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 4
 	},
 /turf/simulated/floor,
 /area/ship/curie/maintenance/power)
@@ -620,26 +609,21 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 9
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor,
 /area/ship/curie/maintenance/power)
 "bu" = (
-/obj/machinery/power/terminal{
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
 	dir = 4
 	},
 /obj/structure/cable{
+	d1 = 4;
 	d2 = 8;
-	icon_state = "0-8"
+	icon_state = "4-8";
+	pixel_x = 0
 	},
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor,
 /area/ship/curie/maintenance/power)
 "bv" = (
 /obj/machinery/power/smes/buildable/max_cap_in_out,
@@ -655,10 +639,6 @@
 	icon_state = "0-4";
 	d2 = 4
 	},
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 8
-	},
 /turf/simulated/floor,
 /area/ship/curie/maintenance/power)
 "bx" = (
@@ -667,7 +647,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/ship/curie/maintenance/power)
 "by" = (
 /obj/structure/table/standard,
@@ -677,30 +657,6 @@
 	dir = 4
 	},
 /turf/simulated/floor,
-/area/ship/curie/maintenance/power)
-"bz" = (
-/obj/effect/floor_decal/industrial/warning/corner{
-	icon_state = "warningcorner";
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/power)
-"bA" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/power)
-"bB" = (
-/obj/effect/floor_decal/industrial/warning/corner{
-	icon_state = "warningcorner";
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
 /area/ship/curie/maintenance/power)
 "bC" = (
 /obj/item/weapon/stool/padded,
@@ -1025,7 +981,7 @@
 "cl" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/captain,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "cm" = (
 /obj/structure/closet/cabinet,
@@ -1036,7 +992,7 @@
 /obj/item/weapon/storage/backpack/dufflebag/syndie,
 /obj/item/weapon/storage/box/shotgunshells,
 /obj/item/weapon/handcuffs,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "cn" = (
 /turf/simulated/floor/tiled,
@@ -1545,7 +1501,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/ship/curie/maintenance/engine)
 "dh" = (
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "di" = (
 /obj/machinery/igniter{
@@ -1578,7 +1534,7 @@
 /obj/machinery/light_switch{
 	pixel_y = 24
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "dm" = (
 /obj/machinery/ntnet_relay,
@@ -1763,6 +1719,7 @@
 	dir = 4
 	},
 /obj/machinery/meter,
+/obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor,
 /area/ship/curie/maintenance/engine)
 "dI" = (
@@ -1851,7 +1808,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "dR" = (
 /obj/structure/cable{
@@ -1860,7 +1817,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "dS" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
@@ -1875,7 +1832,7 @@
 /obj/item/weapon/folder/envelope,
 /obj/random_multi/single_item/captains_spare_id,
 /obj/random_multi/single_item/captains_spare_id,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "dU" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
@@ -2033,7 +1990,7 @@
 	icon_state = "warning";
 	dir = 4
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "eo" = (
 /obj/structure/grille,
@@ -2112,7 +2069,7 @@
 	name = "Contre-argument"
 	},
 /obj/structure/window/reinforced/full,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "ev" = (
 /obj/structure/flora/pottedplant,
@@ -2121,7 +2078,7 @@
 	icon_state = "alarm0";
 	pixel_y = -24
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "ew" = (
 /obj/structure/catwalk,
@@ -2159,7 +2116,7 @@
 /obj/effect/landmark/start{
 	name = "Captain"
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "eA" = (
 /obj/machinery/r_n_d/server/core,
@@ -2278,7 +2235,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "eL" = (
 /obj/machinery/firealarm{
@@ -2381,7 +2338,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
 "eW" = (
 /obj/machinery/power/apc{
@@ -2853,6 +2810,48 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/ship/curie/command/pilot)
+"nj" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 1
+	},
+/obj/machinery/power/terminal{
+	icon_state = "term";
+	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/power)
+"qV" = (
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/power)
+"Ug" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/power)
+"Vn" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	icon_state = "intact";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engine)
 
 (1,1,1) = {"
 aa
@@ -9645,7 +9644,7 @@ cz
 cM
 dc
 do
-dC
+Vn
 dM
 dX
 da
@@ -9996,10 +9995,10 @@ ek
 eB
 av
 aJ
-be
+bj
 bj
 bu
-bz
+bD
 bD
 bH
 bM
@@ -10118,10 +10117,10 @@ es
 eB
 aw
 aS
-bf
 bk
 bv
-bA
+nj
+bD
 bD
 bI
 bN
@@ -10240,10 +10239,10 @@ ek
 eB
 ax
 aZ
-bg
 bl
 bl
-bB
+qV
+bD
 bD
 bJ
 at
@@ -10364,7 +10363,7 @@ aC
 ba
 bh
 bh
-bh
+Ug
 bh
 bh
 bK

@@ -227,22 +227,13 @@
 /turf/simulated/floor,
 /area/ship/curie/maintenance/atmos)
 "ay" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	icon_state = "intact-supply";
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
 /turf/simulated/floor,
 /area/ship/curie/maintenance/atmos)
 "az" = (
@@ -250,8 +241,7 @@
 	icon_state = "intact-supply";
 	dir = 10
 	},
-/obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "aA" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -355,9 +345,6 @@
 /turf/simulated/floor/reinforced/oxygen,
 /area/ship/curie/maintenance/atmos)
 "aH" = (
-/obj/item/device/radio/intercom{
-	pixel_y = 24
-	},
 /obj/machinery/button/remote/blast_door{
 	id = "merchants";
 	name = "Broking Shutters";
@@ -365,10 +352,6 @@
 	pixel_y = -6
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/structure/closet/crate,
-/obj/item/weapon/storage/backpack/dufflebag,
-/obj/random/tech_supply,
-/obj/random/storage,
 /turf/simulated/floor/tiled,
 /area/ship/curie/cargo)
 "aI" = (
@@ -424,14 +407,15 @@
 	icon_state = "intact";
 	dir = 6
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/portable_atmospherics/canister/empty/carbon_dioxide,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "aN" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 8;
 	target_pressure = 101.325
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "aO" = (
 /obj/structure/window/reinforced{
@@ -469,21 +453,12 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/common)
 "aR" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
 /turf/simulated/floor,
 /area/ship/curie/maintenance/atmos)
 "aS" = (
@@ -516,8 +491,8 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/common)
 "aW" = (
-/obj/effect/floor_decal/borderfloor,
-/turf/simulated/floor/tiled,
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "aX" = (
 /obj/effect/floor_decal/borderfloor{
@@ -798,15 +773,7 @@
 /area/ship/curie/maintenance/atmos)
 "by" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/atmos)
-"bz" = (
-/obj/machinery/atmospherics/portables_connector,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "bA" = (
 /obj/structure/table/standard,
@@ -826,7 +793,8 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/portable_atmospherics/canister/empty,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "bC" = (
 /obj/structure/window/reinforced{
@@ -987,6 +955,11 @@
 	icon_state = "borderfloorcorner2_white"
 	},
 /obj/random/snack,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/common)
 "bQ" = (
@@ -995,14 +968,19 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "bR" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
 	icon_state = "map";
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "bS" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -1010,10 +988,13 @@
 	dir = 8
 	},
 /obj/machinery/portable_atmospherics/powered/scrubber,
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "bT" = (
 /obj/effect/floor_decal/borderfloor{
@@ -1105,7 +1086,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/autoname,
 /turf/simulated/floor,
-/area/ship/curie/command/bridge)
+/area/ship/curie/tools)
 "cd" = (
 /obj/structure/table/standard,
 /obj/item/weapon/paper_bin,
@@ -1121,30 +1102,38 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/common)
 "ce" = (
-/obj/machinery/door/airlock/autoname/engineering,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/atmos)
-"cf" = (
-/obj/machinery/atmospherics/binary/passive_gate/on{
-	dir = 1;
-	name = "Air to Supply"
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/atmos)
-"cg" = (
 /obj/machinery/atmospherics/omni/mixer{
 	active_power_usage = 7500;
 	tag_east = 2;
 	tag_east_con = 0;
 	tag_north = 1;
 	tag_north_con = 0.21;
-	tag_south = 1;
-	tag_south_con = 0.79;
-	tag_west = 0;
+	tag_south = 0;
+	tag_south_con = null;
+	tag_west = 1;
+	tag_west_con = 0.79;
 	use_power = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cf" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	icon_state = "intact";
+	dir = 8
+	},
+/obj/machinery/atmospherics/binary/passive_gate/on{
+	dir = 1;
+	name = "Air to Supply"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"cg" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	icon_state = "intact";
+	dir = 8
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "ch" = (
 /obj/machinery/atmospherics/omni/mixer{
@@ -1162,7 +1151,7 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "ci" = (
 /obj/structure/window/reinforced{
@@ -1198,7 +1187,7 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "cl" = (
 /obj/machinery/atmospherics/omni/filter{
@@ -1208,14 +1197,19 @@
 	tag_west = 4;
 	use_power = 1
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "cm" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	icon_state = "intact";
 	dir = 10
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "cn" = (
 /obj/effect/floor_decal/borderfloor{
@@ -1244,23 +1238,14 @@
 	dir = 8
 	},
 /obj/machinery/meter,
-/obj/machinery/alarm{
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "cs" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	icon_state = "intact";
 	dir = 4
 	},
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "ct" = (
 /turf/simulated/wall/r_wall/hull,
@@ -1279,7 +1264,7 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "cw" = (
 /obj/structure/window/reinforced{
@@ -1316,7 +1301,7 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "cz" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
@@ -1324,32 +1309,30 @@
 	dir = 4;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "cA" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	icon_state = "intact";
 	dir = 9
 	},
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "cB" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
 	dir = 4
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	icon_state = "map";
+	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "cC" = (
 /obj/structure/grille,
@@ -1407,11 +1390,11 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "cG" = (
 /obj/item/weapon/wrench,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "cH" = (
 /obj/structure/window/reinforced{
@@ -1452,18 +1435,6 @@
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/ship/curie/maintenance/atmos)
-"cJ" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/obj/effect/floor_decal/borderfloor{
-	dir = 1;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/red/border{
-	icon_state = "bordercolor";
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/crew/kitchen)
 "cK" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/industrial/warning,
@@ -1503,29 +1474,23 @@
 /area/ship/curie/maintenance/atmos)
 "cN" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/atmos)
-"cO" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "cP" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/obj/effect/floor_decal/borderfloor{
-	dir = 1;
-	icon_state = "borderfloor_white"
+/obj/item/weapon/stool/padded,
+/obj/effect/landmark/start{
+	name = "Cook"
 	},
-/obj/effect/floor_decal/corner/red/border{
-	icon_state = "bordercolor";
-	dir = 1
-	},
-/obj/machinery/light/spot{
-	icon_state = "tube1";
-	dir = 1
+/obj/machinery/button/remote/blast_door{
+	id = "rds";
+	name = "Galley Shutters";
+	pixel_x = 24;
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
@@ -1535,19 +1500,13 @@
 "cR" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/machinery/door/airlock/autoname/engineering,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/atmos)
-"cS" = (
-/obj/machinery/door/airlock/autoname/engineering,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
-/turf/simulated/floor,
-/area/ship/curie/maintenance/engineering)
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
 "cT" = (
 /obj/structure/fireaxecabinet{
 	pixel_y = 32
@@ -1620,6 +1579,11 @@
 /area/ship/curie/maintenance/engineering)
 "dc" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor,
 /area/ship/curie/maintenance/engineering)
 "dd" = (
@@ -1630,8 +1594,8 @@
 	pixel_y = 24
 	},
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor,
 /area/ship/curie/maintenance/engineering)
@@ -1682,7 +1646,8 @@
 /turf/simulated/floor,
 /area/ship/curie/broken1)
 "di" = (
-/obj/machinery/biogenerator,
+/obj/structure/table/standard,
+/obj/machinery/microwave,
 /obj/effect/floor_decal/borderfloor{
 	dir = 8;
 	icon_state = "borderfloor_white"
@@ -1694,7 +1659,12 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
 "dj" = (
-/obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/table/standard,
+/obj/item/weapon/book/manual/chef_recipes,
+/obj/item/weapon/storage/box/donkpockets,
+/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+	layer = 5
+	},
 /obj/effect/floor_decal/borderfloor{
 	dir = 4;
 	icon_state = "borderfloor_white"
@@ -1850,7 +1820,7 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/curie/crew/medbay)
 "dw" = (
-/obj/machinery/seed_storage/garden,
+/obj/machinery/vending/dinnerware,
 /obj/effect/floor_decal/borderfloor{
 	dir = 8;
 	icon_state = "borderfloor_white"
@@ -1858,15 +1828,6 @@
 /obj/effect/floor_decal/corner/red/border{
 	icon_state = "bordercolor";
 	dir = 8
-	},
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 10;
-	icon_state = "borderfloorcorner2_white"
-	},
-/obj/machinery/alarm{
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -24
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
@@ -1902,7 +1863,7 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/curie/crew/medbay)
 "dz" = (
-/obj/machinery/portable_atmospherics/hydroponics,
+/obj/machinery/chem_master/condimaster,
 /obj/effect/floor_decal/borderfloor{
 	dir = 4;
 	icon_state = "borderfloor_white"
@@ -1910,10 +1871,6 @@
 /obj/effect/floor_decal/corner/red/border{
 	icon_state = "bordercolor";
 	dir = 4
-	},
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 5;
-	icon_state = "borderfloorcorner2_white"
 	},
 /obj/machinery/firealarm{
 	dir = 4;
@@ -2039,50 +1996,22 @@
 /turf/simulated/wall/r_wall,
 /area/ship/curie/broken2)
 "dN" = (
-/obj/structure/bed/chair/comfy/red{
-	icon_state = "comfychair_preview";
-	dir = 4
-	},
-/obj/effect/floor_decal/borderfloor{
-	dir = 8;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/red/border{
-	icon_state = "bordercolor";
-	dir = 8
-	},
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 8;
-	icon_state = "borderfloorcorner2_white"
-	},
-/obj/item/device/radio/intercom{
+/obj/machinery/alarm{
 	dir = 4;
-	pixel_x = -22
+	icon_state = "alarm0";
+	pixel_x = -24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor,
 /area/ship/curie/crew/kitchen)
 "dO" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled,
 /area/ship/curie/tools)
 "dP" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 4;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/red/border{
-	icon_state = "bordercolor";
-	dir = 4
-	},
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 6;
-	icon_state = "borderfloorcorner2_white"
-	},
 /obj/machinery/light_switch{
 	pixel_x = 24
 	},
-/obj/machinery/chem_master/condimaster,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor,
 /area/ship/curie/crew/kitchen)
 "dQ" = (
 /obj/structure/grille,
@@ -2185,24 +2114,14 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/medbay)
 "dZ" = (
-/obj/structure/closet/secure_closet/freezer/meat,
-/obj/random/drinkbottle,
-/obj/effect/floor_decal/borderfloor{
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/structure/sink{
 	dir = 8;
-	icon_state = "borderfloor_white"
+	icon_state = "sink";
+	pixel_x = -13;
+	pixel_y = 0
 	},
-/obj/effect/floor_decal/corner/red/border{
-	icon_state = "bordercolor";
-	dir = 8
-	},
-/obj/item/weapon/storage/fancy/egg_box,
-/obj/random/drinkbottle,
-/obj/random/drinkbottle,
-/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
-/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
-/obj/random/snack,
-/obj/random/snack,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/dark,
 /area/ship/curie/crew/kitchen)
 "ea" = (
 /obj/machinery/door/airlock/autoname,
@@ -2242,19 +2161,7 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/common)
 "ee" = (
-/obj/machinery/vending/dinnerware,
-/obj/effect/floor_decal/borderfloor{
-	dir = 4;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/red/border{
-	icon_state = "bordercolor";
-	dir = 4
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/dark,
 /area/ship/curie/crew/kitchen)
 "ef" = (
 /obj/effect/floor_decal/borderfloor/corner{
@@ -2382,13 +2289,13 @@
 	pixel_x = 24;
 	pixel_y = -6
 	},
-/obj/machinery/light/spot{
-	icon_state = "tube1";
-	dir = 1
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/random/maintenance,
 /obj/random/maintenance,
+/obj/machinery/light/spot{
+	icon_state = "tube1";
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/cargo)
 "er" = (
@@ -2553,17 +2460,8 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/curie/crew/medbay)
 "eH" = (
-/obj/structure/table/standard,
-/obj/machinery/microwave,
-/obj/effect/floor_decal/borderfloor{
-	dir = 10;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/red/border{
-	icon_state = "bordercolor";
-	dir = 10
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/portable_atmospherics/hydroponics,
+/turf/simulated/floor/tiled/dark,
 /area/ship/curie/crew/kitchen)
 "eI" = (
 /obj/structure/grille,
@@ -2593,19 +2491,6 @@
 	},
 /turf/simulated/floor,
 /area/ship/curie/crew/medbay)
-"eK" = (
-/obj/structure/table/standard,
-/obj/machinery/reagentgrinder,
-/obj/effect/floor_decal/borderfloor{
-	dir = 6;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/red/border{
-	icon_state = "bordercolor";
-	dir = 6
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/crew/kitchen)
 "eL" = (
 /obj/structure/sign/bluecross_1,
 /turf/simulated/wall,
@@ -2915,7 +2800,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/curie/research)
 "fo" = (
-/obj/machinery/door/airlock/autoname,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable{
 	d1 = 1;
@@ -2924,6 +2808,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/autoname/glass,
 /turf/simulated/floor,
 /area/ship/curie/research)
 "fp" = (
@@ -2983,7 +2868,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/autoname,
 /turf/simulated/floor,
-/area/ship/curie/command/bridge)
+/area/ship/curie/research/office)
 "fv" = (
 /obj/structure/catwalk,
 /obj/machinery/light/spot,
@@ -2995,9 +2880,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/common)
-"fx" = (
-/turf/simulated/wall,
-/area/ship/curie/cargo)
 "fy" = (
 /turf/simulated/wall,
 /area/ship/curie/merchant)
@@ -3075,8 +2957,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 1
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/merchant)
@@ -3308,8 +3189,7 @@
 /obj/machinery/mecha_part_fabricator,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 1
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/research)
@@ -3475,10 +3355,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/command/bridge)
-"gm" = (
-/obj/structure/bed/chair/office/light,
-/turf/simulated/floor/tiled,
-/area/ship/curie/crew/common)
 "gn" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4;
@@ -3530,7 +3406,6 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/command/bridge)
 "gq" = (
-/obj/machinery/door/airlock/autoname,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable{
@@ -3539,6 +3414,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
+/obj/machinery/door/airlock/autoname/glass,
 /turf/simulated/floor,
 /area/ship/curie/merchant)
 "gr" = (
@@ -3613,11 +3489,6 @@
 "gA" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/green/border,
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -24
-	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/common)
 "gB" = (
@@ -3652,13 +3523,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/curie/crew/medbay)
-"gD" = (
-/obj/item/modular_computer/console/preset/civilian,
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/green/border,
-/obj/machinery/light/spot,
-/turf/simulated/floor/tiled,
-/area/ship/curie/crew/common)
 "gE" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -3685,14 +3549,6 @@
 	},
 /turf/simulated/floor,
 /area/ship/curie/maintenance/engineering)
-"gG" = (
-/obj/structure/table/standard,
-/obj/item/stack/package_wrap,
-/obj/item/stack/material/cardboard/ten,
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/green/border,
-/turf/simulated/floor/tiled,
-/area/ship/curie/crew/common)
 "gH" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 9;
@@ -3780,18 +3636,17 @@
 /turf/simulated/wall/r_wall/hull,
 /area/ship/curie/crew/kitchen)
 "gQ" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/table/standard,
+/obj/machinery/reagentgrinder,
+/obj/effect/floor_decal/borderfloor{
+	dir = 8;
+	icon_state = "borderfloor_white"
 	},
-/obj/structure/window/reinforced{
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
 	dir = 8
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/turf/simulated/floor,
+/turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
 "gR" = (
 /obj/structure/table/standard,
@@ -3984,8 +3839,7 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
 "hl" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "hm" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -4002,7 +3856,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/command/bridge)
 "ho" = (
 /obj/structure/cable{
@@ -4115,8 +3969,7 @@
 /turf/simulated/floor,
 /area/ship/curie/command/bridge)
 "hy" = (
-/obj/structure/reagent_dispensers/watertank,
-/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
 "hz" = (
@@ -4284,10 +4137,6 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/research/office)
 "hK" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	icon_state = "map-scrubbers";
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -4297,19 +4146,21 @@
 	icon_state = "4-8";
 	pixel_y = 0
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled,
 /area/ship/curie/crew/kitchen)
 "hL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled,
@@ -4413,18 +4264,12 @@
 /turf/simulated/floor,
 /area/ship/curie/merchant)
 "hS" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/seed_storage/garden,
+/turf/simulated/floor,
 /area/ship/curie/crew/kitchen)
 "hT" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 1;
-	layer = 2.4;
-	level = 2
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/biogenerator,
+/turf/simulated/floor,
 /area/ship/curie/crew/kitchen)
 "hU" = (
 /obj/effect/floor_decal/borderfloor{
@@ -4535,11 +4380,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/curie/research)
 "ie" = (
-/obj/item/weapon/stool/padded,
-/obj/effect/landmark/start{
-	name = "Cook"
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/dark,
 /area/ship/curie/crew/kitchen)
 "if" = (
 /obj/machinery/computer/rdconsole/core,
@@ -4632,6 +4476,7 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
+/obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor,
 /area/ship/curie/maintenance/engineering)
 "in" = (
@@ -4650,35 +4495,13 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/curie/crew/medbay)
 "io" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 1;
-	icon_state = "borderfloor_white"
-	},
-/obj/effect/floor_decal/corner/blue/border{
-	icon_state = "bordercolor";
-	dir = 1
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled,
-/area/ship/curie/command/bridge)
-"ip" = (
-/obj/structure/table/standard,
-/obj/item/weapon/book/manual/chef_recipes,
-/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
-	pixel_x = 3
-	},
-/obj/item/weapon/reagent_containers/glass/rag,
-/obj/item/weapon/reagent_containers/food/condiment/enzyme{
-	layer = 5
-	},
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/red/border,
-/turf/simulated/floor/tiled,
-/area/ship/curie/crew/kitchen)
+/area/ship/curie/cargo)
 "iq" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1;
@@ -4691,8 +4514,15 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/item/device/radio/intercom{
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 4;
+	icon_state = "borderfloorcorner2_white"
+	},
 /turf/simulated/floor/tiled,
-/area/ship/curie/command/bridge)
+/area/ship/curie/cargo)
 "ir" = (
 /obj/machinery/door/airlock/autoname,
 /obj/machinery/door/firedoor,
@@ -4789,8 +4619,12 @@
 	icon_state = "bordercolor";
 	dir = 1
 	},
+/obj/structure/closet/crate,
+/obj/item/weapon/storage/backpack/dufflebag,
+/obj/random/storage,
+/obj/random/tech_supply,
 /turf/simulated/floor/tiled,
-/area/ship/curie/command/bridge)
+/area/ship/curie/cargo)
 "iB" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4811,7 +4645,7 @@
 	},
 /obj/machinery/door/airlock/autoname,
 /turf/simulated/floor,
-/area/ship/curie/research)
+/area/ship/curie/maintenance/atmos)
 "iE" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -4827,19 +4661,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor,
-/area/ship/curie/command/bridge)
-"iF" = (
-/obj/structure/catwalk,
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 24;
-	pixel_y = 0
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/command/bridge)
 "iG" = (
 /obj/structure/cable{
@@ -4848,12 +4670,8 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
 /area/ship/curie/command/bridge)
 "iH" = (
@@ -5089,24 +4907,6 @@
 /obj/item/device/flashlight/flare,
 /turf/simulated/floor/tiled,
 /area/ship/curie/tools)
-"iZ" = (
-/obj/effect/floor_decal/borderfloor/corner,
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
-	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/atmos)
 "ja" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -5232,14 +5032,13 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/cargo)
 "jm" = (
-/obj/effect/floor_decal/borderfloor,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8";
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor,
 /area/ship/curie/maintenance/atmos)
 "jn" = (
 /obj/structure/lattice,
@@ -5468,17 +5267,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/research)
-"jG" = (
-/obj/machinery/door/airlock/autoname,
-/obj/machinery/door/firedoor,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/command/bridge)
 "jH" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -5551,11 +5339,6 @@
 	icon_state = "warning";
 	dir = 4
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /turf/simulated/floor,
 /area/ship/curie/maintenance/engineering)
 "jN" = (
@@ -5597,11 +5380,7 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/research)
 "jP" = (
-/obj/effect/floor_decal/borderfloor/corner{
-	dir = 8;
-	icon_state = "borderfloorcorner_white"
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "jQ" = (
 /obj/effect/floor_decal/borderfloor{
@@ -5676,24 +5455,6 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/ship/curie/command/bridge)
-"jX" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/simulated/floor,
-/area/ship/curie/command/bridge)
-"jY" = (
-/obj/structure/catwalk,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/open,
-/area/ship/curie/command/bridge)
 "jZ" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -5718,19 +5479,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/ship/curie/crew/common)
-"kb" = (
-/obj/structure/table/standard,
-/obj/item/weapon/storage/box/donkpockets,
-/obj/item/weapon/material/kitchen/rollingpin,
-/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
-	pixel_x = -3;
-	pixel_y = 0
-	},
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/red/border,
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled,
-/area/ship/curie/crew/kitchen)
 "kc" = (
 /obj/structure/catwalk,
 /obj/structure/window/reinforced{
@@ -6099,20 +5847,12 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/research)
 "kH" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 8;
-	icon_state = "borderfloor_white"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "kI" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 4;
-	icon_state = "borderfloor_white"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
@@ -6122,17 +5862,11 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "kJ" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 10;
-	icon_state = "borderfloor_white"
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "kK" = (
 /obj/structure/grille,
@@ -6151,10 +5885,6 @@
 /turf/simulated/floor,
 /area/ship/curie/maintenance/engineering)
 "kL" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 6;
-	icon_state = "borderfloor_white"
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
@@ -6163,53 +5893,28 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/curie/maintenance/atmos)
 "kM" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 8;
-	icon_state = "borderfloor_white"
+/obj/machinery/atmospherics/portables_connector{
+	icon_state = "map_connector";
+	dir = 4
 	},
-/obj/machinery/alarm{
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled,
-/area/ship/curie/maintenance/atmos)
-"kN" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 4;
-	icon_state = "borderfloor_white"
-	},
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/turf/simulated/floor/tiled,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "kO" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 4;
-	icon_state = "borderfloor_white"
+/obj/machinery/atmospherics/unary/freezer{
+	icon_state = "freezer_0";
+	dir = 1
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/maintenance/atmos)
 "kP" = (
 /obj/structure/window/reinforced{
@@ -6354,6 +6059,218 @@
 	},
 /turf/simulated/floor,
 /area/ship/curie/command/bridge)
+"pO" = (
+/obj/structure/closet,
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"pZ" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"rM" = (
+/turf/simulated/wall,
+/area/space)
+"sa" = (
+/obj/structure/table/standard,
+/obj/item/stack/package_wrap,
+/obj/item/stack/material/cardboard/ten,
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/turf/simulated/floor/tiled,
+/area/space)
+"sR" = (
+/obj/structure/table/standard,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen,
+/obj/effect/floor_decal/borderfloor{
+	dir = 6;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/space)
+"ta" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor,
+/area/ship/curie/research)
+"vu" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"wa" = (
+/turf/simulated/floor/tiled,
+/area/ship/curie/cargo)
+"wI" = (
+/obj/item/weapon/reagent_containers/glass/rag,
+/obj/item/weapon/material/kitchen/utensil/knife,
+/obj/structure/table/reinforced,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	icon_state = "shutter1";
+	id = "galley"
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"yh" = (
+/obj/machinery/atmospherics/pipe/zpipe/up/fuel,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/floor,
+/area/ship/curie/maintenance/engineering)
+"BK" = (
+/obj/machinery/atmospherics/unary/heater{
+	icon_state = "heater_0";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"CM" = (
+/obj/item/weapon/material/kitchen/rollingpin,
+/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
+	pixel_x = -3;
+	pixel_y = 0
+	},
+/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = 3
+	},
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	icon_state = "shutter1";
+	id = "galley"
+	},
+/turf/simulated/floor,
+/area/ship/curie/crew/kitchen)
+"DI" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor,
+/area/ship/curie/maintenance/atmos)
+"El" = (
+/obj/item/modular_computer/console/preset/civilian,
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/obj/machinery/light/spot,
+/turf/simulated/floor/tiled,
+/area/space)
+"HN" = (
+/obj/structure/bed/chair/office/light,
+/turf/simulated/floor/tiled,
+/area/space)
+"HX" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/green/border,
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -24
+	},
+/turf/simulated/floor/tiled,
+/area/space)
+"KY" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"MZ" = (
+/obj/machinery/door/airlock/autoname/engineering,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/curie/maintenance/atmos)
+"Pb" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	icon_state = "intact";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/curie/maintenance/atmos)
+"Pm" = (
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/random/drinkbottle,
+/obj/item/weapon/storage/fancy/egg_box,
+/obj/random/drinkbottle,
+/obj/random/drinkbottle,
+/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
+/obj/item/weapon/reagent_containers/food/snacks/meat/beef,
+/obj/random/snack,
+/obj/random/snack,
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/ship/curie/crew/kitchen)
+"Sm" = (
+/turf/simulated/floor,
+/area/space)
+"SK" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor,
+/area/ship/curie/merchant)
+"SS" = (
+/obj/structure/table/standard,
+/obj/item/weapon/tape_roll,
+/obj/effect/floor_decal/borderfloor{
+	dir = 4;
+	icon_state = "borderfloor_white"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 6;
+	icon_state = "borderfloorcorner2_white"
+	},
+/obj/random/snack,
+/turf/simulated/floor/tiled,
+/area/space)
+"Tb" = (
+/turf/simulated/floor/tiled,
+/area/space)
 
 (1,1,1) = {"
 aa
@@ -12408,7 +12325,7 @@ ft
 hR
 iN
 jb
-ft
+ab
 aa
 aa
 aa
@@ -12519,7 +12436,7 @@ eu
 dQ
 ai
 ai
-ai
+aq
 aq
 ep
 cU
@@ -12530,7 +12447,7 @@ ft
 hV
 hV
 jc
-ft
+ab
 ab
 ab
 ab
@@ -12652,7 +12569,7 @@ kf
 kA
 kD
 kF
-fD
+DI
 kH
 kJ
 ab
@@ -12763,7 +12680,7 @@ dL
 bX
 gs
 fY
-al
+as
 as
 as
 ea
@@ -12774,7 +12691,7 @@ fy
 fy
 iQ
 fy
-fy
+bx
 am
 aW
 ab
@@ -12885,18 +12802,18 @@ gl
 go
 fA
 gK
-al
+as
 gL
 hY
 er
 ac
-fy
+SK
 fG
 ge
 hX
 jK
 je
-fy
+bx
 ax
 jP
 kM
@@ -13007,7 +12924,7 @@ al
 al
 al
 gM
-al
+as
 gW
 dm
 eb
@@ -13018,9 +12935,9 @@ hW
 iP
 iR
 jf
-fy
-ay
 bx
+ay
+KY
 ce
 cp
 cp
@@ -13129,7 +13046,7 @@ jV
 bs
 al
 gT
-al
+as
 hp
 dO
 ec
@@ -13140,7 +13057,7 @@ gr
 hZ
 iS
 jg
-fy
+bx
 az
 by
 cf
@@ -13251,7 +13168,7 @@ dn
 bw
 al
 gM
-al
+as
 hv
 ic
 gY
@@ -13262,13 +13179,13 @@ gx
 ib
 iT
 jh
-fy
+bx
 hl
-bz
+hl
 cg
 cs
 cG
-ce
+MZ
 cQ
 cQ
 kq
@@ -13373,18 +13290,18 @@ gd
 gd
 ju
 gV
-al
-al
-al
-al
-al
+as
+as
+as
+as
+as
 fy
 fT
 ki
 fy
 fy
 fy
-fy
+bx
 aB
 bB
 ch
@@ -13499,14 +13416,14 @@ hn
 iE
 iG
 io
-al
+wa
 aH
 jJ
 jl
 dq
 dq
 ei
-fx
+bx
 aC
 bC
 ci
@@ -13619,16 +13536,16 @@ bc
 ho
 iC
 iC
-jX
+al
 iq
-jG
+jH
 jH
 jI
 cK
 dq
 hd
 dq
-fx
+bx
 aF
 bI
 cj
@@ -13739,18 +13656,18 @@ kd
 kd
 kd
 ht
-kd
-iF
-jY
-iA
+bd
+bd
 al
+iA
+pO
 eq
 kj
 cK
 dq
 dq
 ei
-fx
+bx
 aG
 bK
 bK
@@ -13861,18 +13778,18 @@ gj
 gj
 aA
 jt
-al
-al
-al
-al
-al
+bJ
+bJ
+bJ
+bJ
+bJ
 fB
 fC
 he
 fB
 fB
 fB
-fB
+bx
 aK
 bQ
 ck
@@ -13966,15 +13883,15 @@ bg
 et
 fH
 dr
-gD
-gN
-cJ
+gA
+wI
 hk
 hk
+vu
 hK
 hS
 ie
-kb
+eH
 gN
 al
 al
@@ -13983,7 +13900,7 @@ do
 bU
 al
 hw
-al
+bJ
 hz
 ig
 iH
@@ -13994,7 +13911,7 @@ hq
 id
 fn
 ji
-fB
+bx
 aM
 bR
 cl
@@ -14087,16 +14004,16 @@ bM
 bM
 bD
 fM
-gm
-gG
-gN
+dG
+gA
+CM
 cP
 hk
 hy
 hL
 hT
-hk
-ip
+ie
+eH
 gN
 ao
 al
@@ -14105,7 +14022,7 @@ jW
 dJ
 al
 hx
-al
+bJ
 hA
 dR
 eg
@@ -14116,14 +14033,14 @@ hr
 if
 iV
 jj
-fB
+bx
 aN
 bS
 cm
 cA
-cO
+jP
 bx
-cV
+yh
 fO
 il
 ks
@@ -14212,13 +14129,13 @@ fP
 bP
 cd
 gN
-gQ
+Pm
 dj
 dz
 hM
 dP
 ee
-eK
+eH
 gN
 al
 al
@@ -14227,7 +14144,7 @@ al
 al
 al
 hw
-al
+bJ
 hJ
 dS
 eh
@@ -14238,12 +14155,12 @@ fW
 hs
 iW
 jk
-fB
+bx
 aR
-bx
-ce
-bx
-bx
+pZ
+jP
+Pb
+BK
 bx
 dd
 gy
@@ -14349,24 +14266,24 @@ gn
 gp
 fF
 hI
-al
+bJ
 hP
 gR
 dU
 jd
-fB
+ta
 fZ
 hN
 iJ
 iK
 fU
-fB
+bx
 aS
-iZ
-kN
+pZ
+KY
 cB
 kO
-cS
+cp
 jM
 jN
 co
@@ -14471,7 +14388,7 @@ dL
 lp
 gw
 ga
-al
+bJ
 bJ
 bJ
 ej
@@ -14482,7 +14399,7 @@ fB
 fB
 iX
 fB
-fB
+bx
 aT
 jm
 ab
@@ -14715,7 +14632,7 @@ eR
 dQ
 ai
 ai
-ai
+ct
 ct
 dV
 fr
@@ -14726,7 +14643,7 @@ fE
 iL
 iL
 jn
-fE
+ab
 ab
 ab
 ab
@@ -14848,7 +14765,7 @@ fE
 iM
 ja
 jo
-fE
+ab
 aa
 aa
 aa
@@ -15911,10 +15828,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+Tb
+HX
+rM
+Tb
 aa
 aa
 aa
@@ -16033,10 +15950,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+Sm
+El
+rM
+Tb
 aa
 aa
 aa
@@ -16155,10 +16072,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+HN
+sa
+rM
+Tb
 aa
 aa
 aa
@@ -16277,10 +16194,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+SS
+sR
+rM
+Tb
 aa
 aa
 aa
