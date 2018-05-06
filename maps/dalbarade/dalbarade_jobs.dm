@@ -12,7 +12,8 @@
 	/datum/job/cyborg,
 	/datum/job/assistant)
 	species_to_job_whitelist = list(
-		/datum/species/vox = list(/datum/job/assistant)
+		/datum/species/nabber = list(/datum/job/assistant, /datum/job/mercenary, /datum/job/engineer)
+		/datum/species/skrell = list(/datum/job/assistant, /datum/job/doctor, /datum/job/rd)
 	)
 
 /datum/job/captain
