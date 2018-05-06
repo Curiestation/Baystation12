@@ -103,6 +103,14 @@
 /obj/machinery/door/airlock/autoname/engineering
 	req_access = list(access_engine)
 
+/obj/machinery/door/airlock/autoname/glass
+	icon = 'icons/obj/doors/Doorglass.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	glass = 1
+
 //wild capitalism
 /datum/computer_file/program/merchant
 	required_access = null
