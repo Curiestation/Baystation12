@@ -13,7 +13,13 @@
 	/datum/job/assistant)
 	species_to_job_whitelist = list(
 		/datum/species/nabber = list(/datum/job/assistant, /datum/job/mercenary, /datum/job/engineer),
-		/datum/species/skrell = list(/datum/job/assistant, /datum/job/doctor, /datum/job/rd)
+	)
+	species_to_job_blacklist = list(
+		/datum/species/skrell = list(/datum/job/captain, /datum/job/hop, /datum/job/pilot, /datum/job/chief_engineer, /datum/job/engineer, /datum/job/mercenary, /datum/job/mining),
+		/datum/species/machine = /datum/job/captain,
+		/datum/species/diona = list(/datum/job/captain,/datum/job/hop, /datum/job/pilot, /datum/job/chief_engineer, /datum/job/engineer, /datum/job/rd, /datum/job/doctor, /datum/job/mercenary, /datum/job/mining, /datum/job/assistant),
+		/datum/species/unathi = list(/datum/job/captain,/datum/job/hop, /datum/job/pilot, /datum/job/chief_engineer, /datum/job/engineer, /datum/job/rd, /datum/job/doctor, /datum/job/mercenary, /datum/job/mining, /datum/job/assistant),
+		/datum/species/tajaran = list(/datum/job/captain,/datum/job/hop, /datum/job/pilot, /datum/job/chief_engineer, /datum/job/engineer, /datum/job/rd, /datum/job/doctor, /datum/job/mercenary, /datum/job/mining, /datum/job/assistant)
 	)
 
 /datum/job/captain
