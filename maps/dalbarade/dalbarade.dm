@@ -13,6 +13,7 @@
 	#include "../away/empty.dmm"
 	#include "../away/mining/mining.dm"
 	#include "../away/derelict/derelict.dm"
+	#include "../away/bearcat/bearcat.dm"
 	#include "../away/lost_supply_base/lost_supply_base.dm"
 	#include "../away/marooned/marooned.dm"
 	#include "../away/smugglers/smugglers.dm"
@@ -21,7 +22,6 @@
 	#include "../away/yacht/yacht.dm"
 	#include "../away/blueriver/blueriver.dm"
 	#include "../away/slavers/slavers_base.dm"
-	#include "../away/hydro/hydro.dm"
 	#include "../away/mobius_rift/mobius_rift.dm"
 	#include "../away/icarus/icarus.dm"
 	#include "../away/errant_pisces/errant_pisces.dm"
@@ -96,20 +96,26 @@
 /decl/flooring/tiling
 	name = "deck"
 
-/obj/machinery/door/airlock/autoname/command
-	icon = 'icons/obj/doors/Doorhatchele.dmi'
+/obj/machinery/door/airlock/hatch/autoname
+
+/obj/machinery/door/airlock/hatch/autoname/New()
+	var/area/A = get_area(src)
+	name = A.name
+	..()
+
+/obj/machinery/door/airlock/hatch/autoname/general
+	stripe_color = COLOR_CIVIE_GREEN
+
+/obj/machinery/door/airlock/hatch/autoname/maintenance
+	stripe_color = COLOR_AMBER
+
+/obj/machinery/door/airlock/hatch/autoname/command
 	req_access = list(access_heads)
+	stripe_color = COLOR_COMMAND_BLUE
 
-/obj/machinery/door/airlock/autoname/engineering
+/obj/machinery/door/airlock/hatch/autoname/engineering
 	req_access = list(access_engine)
-
-/obj/machinery/door/airlock/autoname/glass
-	icon = 'icons/obj/doors/Doorglass.dmi'
-	hitsound = 'sound/effects/Glasshit.ogg'
-	maxhealth = 300
-	explosion_resistance = 5
-	opacity = 0
-	glass = 1
+	stripe_color = COLOR_AMBER
 
 //wild capitalism
 /datum/computer_file/program/merchant
