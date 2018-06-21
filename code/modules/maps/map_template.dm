@@ -10,6 +10,7 @@
 	var/base_turf_for_zs = null
 	var/accessibility_weight = 0
 	var/spawn_guaranteed = FALSE
+	var/clear_contents = FALSE  //if it should destroy objects it spawns on top of
 
 /datum/map_template/New(var/list/paths = null, var/rename = null)
 	if(paths && !islist(paths))
@@ -25,7 +26,7 @@
 	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
 	var/z_offset = 1 // needed to calculate z-bounds correctly
 	for (var/mappath in mappaths)
-		var/datum/map_load_metadata/M = maploader.load_map(file(mappath), 1, 1, z_offset, cropMap=FALSE, measureOnly=TRUE, no_changeturf=TRUE)
+		var/datum/map_load_metadata/M = maploader.load_map(file(mappath), 1, 1, z_offset, cropMap=FALSE, measureOnly=TRUE, no_changeturf=TRUE, clear_contents=clear_contents)
 		if(M)
 			bounds = extend_bounds_if_needed(bounds, M.bounds)
 			z_offset++
@@ -108,7 +109,7 @@
 
 	return locate(world.maxx/2, world.maxy/2, world.maxz)
 
-/datum/map_template/proc/load(turf/T, centered=FALSE, clear_contents=FALSE)
+/datum/map_template/proc/load(turf/T, centered=FALSE)
 	if(centered)
 		T = locate(T.x - round(width/2) , T.y - round(height/2) , T.z)
 	if(!T)
@@ -130,6 +131,7 @@
 	//initialize things that are normally initialized after map load
 	init_atoms(atoms_to_initialise)
 	init_shuttles()
+	SSlighting.InitializeTurfs(atoms_to_initialise)	// Hopefully no turfs get placed on new coords by SSatoms.
 	log_game("[name] loaded at at [T.x],[T.y],[T.z]")
 	loaded++
 
@@ -153,7 +155,7 @@
 	return block(placement, locate(placement.x+width-1, placement.y+height-1, placement.z))
 
 //for your ever biggening badminnery kevinz000
-//❤ - Cyberboss
+//? - Cyberboss
 /proc/load_new_z_level(var/file, var/name)
 	var/datum/map_template/template = new(file, name)
 	template.load_new_z()
