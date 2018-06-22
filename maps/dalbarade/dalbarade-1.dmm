@@ -54,7 +54,7 @@
 "bb" = (/obj/machinery/washing_machine,/turf/simulated/floor/tiled/dark,/area/ship/curie/crew/dorms)
 "bc" = (/obj/structure/closet,/obj/random/clothing,/obj/random/clothing,/obj/random/clothing,/obj/random/clothing,/turf/simulated/floor/tiled/dark,/area/ship/curie/crew/dorms)
 "bd" = (/turf/simulated/wall/titanium,/area/ship/curie/shuttle/outgoing)
-"be" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/curie/refinery)
+"be" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/curie/refinery)
 "bf" = (/obj/machinery/door/airlock/external/glass/bolted/cycling{frequency = 1383; id_tag = "dalbarade_shuttle_out"},/obj/machinery/access_button/airlock_exterior{frequency = 1383; master_tag = "dalbarade_shuttle"; pixel_x = 20; pixel_y = 12},/turf/simulated/floor,/area/ship/curie/shuttle/outgoing)
 "bg" = (/obj/structure/shuttle/engine/propulsion/burst/left{icon_state = "burst_l"; dir = 8},/obj/structure/window/reinforced,/turf/simulated/floor/airless,/area/ship/curie/shuttle/outgoing)
 "bh" = (/obj/structure/shuttle/engine/propulsion/burst/left{icon_state = "burst_l"; dir = 4},/obj/structure/window/reinforced,/turf/simulated/floor/airless,/area/ship/curie/shuttle/outgoing)
@@ -163,14 +163,14 @@
 "dg" = (/obj/effect/floor_decal/industrial/warning/corner{icon_state = "warningcorner"; dir = 8},/turf/simulated/floor/tiled,/area/ship/curie/cargo)
 "dh" = (/obj/structure/fitness/weightlifter,/obj/effect/floor_decal/borderfloor{dir = 1; icon_state = "borderfloor_white"},/obj/effect/floor_decal/corner/red/border{icon_state = "bordercolor"; dir = 1},/turf/simulated/floor/tiled,/area/ship/curie/merc)
 "di" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/random/closet,/obj/random/toolbox,/turf/simulated/floor/tiled,/area/ship/curie/cargo)
-"dj" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor,/area/ship/curie/cargo)
+"dj" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor,/area/ship/curie/cargo)
 "dk" = (/obj/effect/floor_decal/corner/beige{icon_state = "corner_white"; dir = 9},/obj/effect/floor_decal/corner/beige{icon_state = "corner_white"; dir = 5},/turf/simulated/floor/tiled,/area/ship/curie/shuttle/lift)
 "dl" = (/obj/effect/floor_decal/corner/beige{icon_state = "corner_white"; dir = 5},/turf/simulated/floor/tiled,/area/ship/curie/shuttle/lift)
 "dm" = (/obj/effect/floor_decal/corner/beige{icon_state = "corner_white"; dir = 6},/obj/effect/floor_decal/corner/beige{icon_state = "corner_white"; dir = 5},/turf/simulated/floor/tiled,/area/ship/curie/shuttle/lift)
 "dn" = (/obj/structure/sign/warning/moving_parts,/turf/simulated/wall,/area/ship/curie/cargo)
 "do" = (/obj/effect/floor_decal/corner/beige{icon_state = "corner_white"; dir = 9},/turf/simulated/floor/tiled,/area/ship/curie/shuttle/lift)
 "dp" = (/obj/effect/shuttle_landmark/lift/bottom,/turf/simulated/floor/tiled,/area/ship/curie/shuttle/lift)
-"dq" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/curie/shuttle/outgoing)
+"dq" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/curie/cargo)
 "dr" = (/obj/effect/decal/cleanable/cobweb,/obj/structure/table/steel,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor,/area/ship/curie/cargo)
 "ds" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/atmospherics/pipe/zpipe/up/supply{icon_state = "up-supply"; dir = 4},/turf/simulated/floor,/area/ship/curie/cargo)
 "dt" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/atmospherics/pipe/tank/air{icon_state = "air_map"; dir = 8},/obj/machinery/light/small{dir = 4},/turf/simulated/floor,/area/ship/curie/cargo)
@@ -183,7 +183,7 @@
 "dA" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/light/small{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden,/turf/simulated/floor,/area/ship/curie/cargo)
 "dB" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/machinery/atmospherics/pipe/manifold/hidden{icon_state = "map"; dir = 8},/turf/simulated/floor,/area/ship/curie/cargo)
 "dC" = (/obj/structure/closet,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/turf/simulated/floor,/area/ship/curie/cargo)
-"dD" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor,/area/ship/curie/shuttle/outgoing)
+"dD" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/curie/shuttle/outgoing)
 "dE" = (/obj/structure/closet/emcloset,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor,/area/ship/curie/cargo)
 "dF" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/light/small{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden,/turf/simulated/floor,/area/ship/curie/cargo)
 "dG" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor,/area/ship/curie/crew/dorms)
@@ -196,13 +196,15 @@
 "dN" = (/obj/effect/floor_decal/borderfloor{dir = 1; icon_state = "borderfloor_white"},/obj/effect/floor_decal/corner/red/border{icon_state = "bordercolor"; dir = 1},/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24},/obj/structure/cable{icon_state = "0-2"; pixel_y = 1; d2 = 2},/turf/simulated/floor/tiled,/area/ship/curie/merc)
 "dO" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{icon_state = "up-scrubbers"; dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden{dir = 10; icon_state = "intact"},/turf/simulated/floor,/area/ship/curie/cargo)
 "dP" = (/obj/machinery/atmospherics/pipe/manifold/hidden{icon_state = "map"; dir = 8},/turf/simulated/floor,/area/ship/curie/cargo)
-"dQ" = (/obj/effect/wingrille_spawn/reinforced,/obj/machinery/atmospherics/pipe/manifold/hidden,/turf/simulated/floor/plating,/area/ship/curie/shuttle/outgoing)
+"dQ" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/atmospherics/pipe/manifold/hidden,/turf/simulated/floor/plating,/area/ship/curie/shuttle/outgoing)
 "dR" = (/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/brown/border,/turf/simulated/floor/tiled,/area/ship/curie/cargo)
 "dS" = (/turf/simulated/wall/r_wall,/area/ship/curie/cargo)
 "dT" = (/obj/machinery/atmospherics/pipe/simple/hidden,/obj/machinery/door/airlock/external/bolted/cycling{frequency = 1383; id_tag = "dock_stern_in"},/obj/machinery/access_button/airlock_interior{frequency = 1383; master_tag = "dock_stern"; pixel_x = 20; pixel_y = 12},/turf/simulated/floor,/area/ship/curie/cargo)
 "dU" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/floodlight,/turf/simulated/floor/tiled,/area/ship/curie/cargo)
 "dV" = (/obj/effect/decal/cleanable/cobweb{icon_state = "cobweb1"; dir = 4},/obj/machinery/atmospherics/pipe/tank/air{icon_state = "air_map"; dir = 1},/turf/simulated/floor,/area/ship/curie/cargo)
 "dW" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/obj/item/weapon/stool,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 10; icon_state = "intact"},/turf/simulated/floor,/area/ship/curie/cargo)
+"dX" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/atmospherics/pipe/simple/hidden{icon_state = "intact"; dir = 9},/turf/simulated/floor/plating,/area/ship/curie/shuttle/outgoing)
+"dY" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor,/area/ship/curie/shuttle/outgoing)
 "ea" = (/obj/effect/floor_decal/industrial/warning/full,/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 1; frequency = 1383; id_tag = "dock_stern_pump"},/obj/machinery/embedded_controller/radio/airlock/docking_port{frequency = 1383; id_tag = "dock_stern"; pixel_x = 25; pixel_y = 0; tag_airpump = "dock_stern_pump"; tag_chamber_sensor = "dock_stern_sensor"; tag_exterior_door = "dock_stern_out"; tag_interior_door = "dock_stern_in"},/obj/machinery/airlock_sensor{frequency = 1383; id_tag = "dock_stern_sensor"; pixel_x = -20; pixel_y = 0},/turf/simulated/floor,/area/ship/curie/cargo)
 "eb" = (/obj/structure/closet/walllocker/emerglocker/west,/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/cable{d1 = 16; d2 = 0; icon_state = "16-0"},/obj/structure/cable{icon_state = "0-2"; pixel_y = 1; d2 = 2},/turf/simulated/floor,/area/ship/curie/command/bridge)
 "ec" = (/turf/simulated/floor,/area/ship/curie/command/bridge)
@@ -331,7 +333,6 @@
 "gx" = (/obj/machinery/atmospherics/pipe/simple/hidden{icon_state = "intact"; dir = 4},/obj/machinery/sleeper{icon_state = "sleeper_0"; dir = 8},/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled,/area/ship/curie/shuttle/outgoing)
 "gy" = (/obj/machinery/door/airlock/external/bolted/cycling{dir = 4; id_tag = "cargo_port_out"},/turf/simulated/floor,/area/ship/curie/cargo)
 "gz" = (/obj/machinery/atmospherics/pipe/simple/hidden{icon_state = "intact"; dir = 4},/turf/simulated/wall/titanium,/area/ship/curie/shuttle/outgoing)
-"gA" = (/obj/effect/wingrille_spawn/reinforced,/obj/machinery/atmospherics/pipe/simple/hidden{icon_state = "intact"; dir = 9},/turf/simulated/floor/plating,/area/ship/curie/shuttle/outgoing)
 "gB" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/structure/closet/crate,/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -24},/obj/machinery/light/small,/turf/simulated/floor/tiled,/area/ship/curie/merc)
 "gD" = (/obj/machinery/door/airlock/external/glass/bolted/cycling{dir = 4; frequency = 1383; id_tag = "dalbarade_shuttle_cargo_out"},/turf/simulated/floor,/area/ship/curie/shuttle/outgoing)
 "gE" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 4; frequency = 1383; id_tag = "dalbarade_shuttle_cargo_pump"},/turf/simulated/floor,/area/ship/curie/shuttle/outgoing)
@@ -357,7 +358,6 @@
 "gY" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 4},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled,/area/ship/curie/escape_star)
 "gZ" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 8},/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/tiled,/area/ship/curie/escape_port)
 "ha" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 4},/obj/machinery/alarm{dir = 4; pixel_x = -23; pixel_y = 0},/turf/simulated/floor/tiled,/area/ship/curie/escape_star)
-"hb" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/curie/cargo)
 "hc" = (/obj/machinery/washing_machine,/obj/machinery/light/spot{icon_state = "tube1"; dir = 1},/turf/simulated/floor/tiled/dark,/area/ship/curie/crew/dorms)
 "hd" = (/obj/structure/curtain/open/shower,/obj/machinery/shower,/obj/structure/window/reinforced/tinted{icon_state = "twindow"; dir = 4},/obj/machinery/alarm{dir = 4; pixel_x = -23; pixel_y = 0},/turf/simulated/floor/tiled/freezer,/area/ship/curie/crew/toilets)
 "he" = (/obj/structure/closet,/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/green/border,/obj/machinery/light/spot,/turf/simulated/floor/tiled,/area/ship/curie/locker)
@@ -555,18 +555,18 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagyiiipifjehjcFcFcFcEddfNdfdfdgcIcFcFcFhChihRhUhWhSaaaaaaaaaaaaaaaaaaiuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaainhXiligibhjdijmcUcEdjdkdldmdjcIcUcUdwhChYhVieijhSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvcvcvcvdFcxhucFcFcEdndodpdxdncIcFcFhEcxdAcvcvcvcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahbdrdsiccxdvdwjqcEdjdydzeSdjcIjncUjocxdBdOdChbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahbdEjchsgjdHcLcLdIdJhmcPdKkjdLcScSdMgniadPdWhbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahbdEjbjdcxhkjsjtdRdRdSdTdSkidRjpdUhlcxdVjbidhbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadqdrdsiccxdvdwjqcEdjdydzeSdjcIjncUjocxdBdOdCdqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadqdEjchsgjdHcLcLdIdJhmcPdKkjdLcScSdMgniadPdWdqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadqdEjbjdcxhkjsjtdRdRdSdTdSkidRjpdUhlcxdVjbiddqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvcvcvcvcvcvdjdjdjcvcveacvcvdjdjdjcvcvcvcvcvcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaghgscvcvghgsaaaaghaacvjacvaaghaaaagsghcvcvgsghaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahahbgbdbddqbdbdbdbfbdbdbddqbdbdbhjhjhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabdbdbdbdbifefBfmfCgrgtfCgugvgxgzgzdQgAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagDiZgFgGgHhphDithFhGhHhIhJhKiShLhMhNdDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagDgEhPimiqiririLbdiXbdbdhZixjjiyiziYdDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiPgEiAimiqiBiDiDiEiFiFisiFiGiFiEiHivdDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabdbdbdbdiJiKiViMiNiCiIiOiQiRjibdbddqdqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiWiWjfbdbddqbdbdbdbdbdbdbddqbdbdjgiWiWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahahbgbdbddDbdbdbdbfbdbdbddDbdbdbhjhjhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabdbdbdbdbifefBfmfCgrgtfCgugvgxgzgzdQdXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagDiZgFgGgHhphDithFhGhHhIhJhKiShLhMhNdYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagDgEhPimiqiririLbdiXbdbdhZixjjiyiziYdYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiPgEiAimiqiBiDiDiEiFiFisiFiGiFiEiHivdYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabdbdbdbdiJiKiViMiNiCiIiOiQiRjibdbddDdDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiWiWjfbdbddDbdbdbdbdbdbdbddDbdbdjgiWiWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
