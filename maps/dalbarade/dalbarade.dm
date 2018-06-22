@@ -13,7 +13,6 @@
 	#include "../away/empty.dmm"
 	#include "../away/mining/mining.dm"
 	#include "../away/derelict/derelict.dm"
-	#include "../away/bearcat/bearcat.dm"
 	#include "../away/lost_supply_base/lost_supply_base.dm"
 	#include "../away/marooned/marooned.dm"
 	#include "../away/smugglers/smugglers.dm"
@@ -96,24 +95,24 @@
 /decl/flooring/tiling
 	name = "deck"
 
-/obj/machinery/door/airlock/hatch/autoname
+/obj/machinery/door/airlock/autoname
 
-/obj/machinery/door/airlock/hatch/autoname/New()
+/obj/machinery/door/airlock/autoname/New()
 	var/area/A = get_area(src)
 	name = A.name
 	..()
 
-/obj/machinery/door/airlock/hatch/autoname/general
+/obj/machinery/door/airlock/autoname/general
 	stripe_color = COLOR_CIVIE_GREEN
 
-/obj/machinery/door/airlock/hatch/autoname/maintenance
+/obj/machinery/door/airlock/autoname/maintenance
 	stripe_color = COLOR_AMBER
 
-/obj/machinery/door/airlock/hatch/autoname/command
+/obj/machinery/door/airlock/autoname/command
 	req_access = list(access_heads)
 	stripe_color = COLOR_COMMAND_BLUE
 
-/obj/machinery/door/airlock/hatch/autoname/engineering
+/obj/machinery/door/airlock/autoname/engineering
 	req_access = list(access_engine)
 	stripe_color = COLOR_AMBER
 
