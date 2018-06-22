@@ -240,6 +240,7 @@
 "eF" = (/obj/machinery/door/airlock/autoname,/obj/machinery/door/firedoor,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/tiled/steel_grid,/area/ship/curie/crew/common)
 "eG" = (/obj/structure/table/standard,/obj/item/weapon/scalpel,/obj/item/weapon/retractor,/obj/item/weapon/tape_roll,/obj/effect/floor_decal/borderfloorwhite{icon_state = "borderfloor_white"; dir = 4},/obj/effect/floor_decal/corner/paleblue/border{icon_state = "bordercolor"; dir = 4},/obj/item/weapon/reagent_containers/food/drinks/coffeecup/britcup,/turf/simulated/floor/tiled/white,/area/ship/curie/crew/medbay)
 "eH" = (/obj/machinery/portable_atmospherics/hydroponics,/turf/simulated/floor/tiled/dark,/area/ship/curie/crew/kitchen)
+"eI" = (/obj/effect/shuttle_landmark/lift/top,/turf/simulated/open,/area/ship/curie/cargo)
 "eJ" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor,/area/ship/curie/crew/medbay)
 "eK" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/machinery/door/airlock/autoname,/turf/simulated/floor,/area/ship/curie/merchant)
 "eL" = (/obj/structure/sign/bluecross_1,/turf/simulated/wall,/area/ship/curie/crew/medbay)
@@ -360,7 +361,6 @@
 "ha" = (/obj/effect/decal/cleanable/cobweb{icon_state = "cobweb1"; dir = 4},/turf/simulated/floor,/area/ship/curie/broken2)
 "hb" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor,/area/ship/curie/broken1)
 "hc" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_y = 0},/obj/machinery/light_switch{pixel_y = -24},/turf/simulated/floor,/area/ship/curie/broken1)
-"hd" = (/obj/effect/shuttle_landmark/lift/top,/turf/simulated/open,/area/ship/curie/cargo)
 "he" = (/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{dir = 4; icon_state = "shutter1"; id = "rds"},/turf/simulated/floor,/area/ship/curie/research)
 "hf" = (/obj/structure/skele_stand{anchored = 0; name = "Jerome"},/turf/simulated/floor,/area/ship/curie/broken2)
 "hg" = (/obj/machinery/power/apc{dir = 2; name = "south bump"; pixel_y = -24},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/turf/simulated/floor,/area/ship/curie/broken1)
@@ -625,7 +625,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacqcujBftjCfyfGfQfRfSfTjJjIkjfCjFjOjQfZfBjRfEjBcucxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacqcuftftkffygehWgrgxkijlcKcKhehqhrfWhNfBkhfEfEcucxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacqcufthVkAfyhXiPhZibfydqdqdqfBidifhsiJfBkCiLfEcucxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacqcufthVkDcSjKiRiSiTfydqhddqfBfniViWiKdJkEiLfEcucxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacqcufthVkDcSjKiRiSiTfydqeIdqfBfniViWiKdJkEiLfEcucxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaftjckFfyjejfcOjhfyeidqeifBjijjjkfUfBkGjnfEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababDIbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxiDababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabkHamaxayazhlaBaCaFaGaKaMaNaRaSaTkIabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
