@@ -219,7 +219,7 @@
 	name = dalbarade_OUTFIT_JOB_NAME("Pilot")
 	suit = /obj/item/clothing/suit/storage/toggle/brown_jacket
 	pda_type = /obj/item/modular_computer/pda/cargo
-	id_type = /obj/item/weapon/card/id/cargo/head
+	id_type = /obj/item/weapon/card/id/silver
 
 /decl/hierarchy/outfit/job/dalbarade/mercenary
 	name = dalbarade_OUTFIT_JOB_NAME("Mercenary")
