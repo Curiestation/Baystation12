@@ -134,6 +134,7 @@
 /datum/job/engineer
 	title = "Ship Engineer"
 	supervisors = "Chief Engineer"
+	outfit_type = /decl/hierarchy/outfit/job/dalbarade/hand/engine
 	total_positions = 2
 	spawn_positions = 2
 	hud_icon = "hudengineer"
@@ -153,7 +154,6 @@
 
 /datum/job/cyborg
 	supervisors = "your laws and the Captain"
-	outfit_type = /decl/hierarchy/outfit/job/dalbarade/hand/engine
 	total_positions = 1
 	spawn_positions = 1
 
@@ -165,15 +165,15 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/dalbarade
 	pda_type = /obj/item/modular_computer/pda
 	pda_slot = slot_l_store
+	r_pocket = /obj/item/device/radio
 	l_ear = null
 	r_ear = null
+	shoes = /obj/item/clothing/shoes/magboots/soft
+	uniform = /obj/item/clothing/under/color/grey
 
 /decl/hierarchy/outfit/job/dalbarade/captain
 	name = dalbarade_OUTFIT_JOB_NAME("Captain")
-	uniform = /obj/item/clothing/under/casual_pants/classicjeans
-	shoes = /obj/item/clothing/shoes/black
 	pda_type = /obj/item/modular_computer/pda/captain
-	r_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/gold
 
 
@@ -189,37 +189,28 @@
 
 /decl/hierarchy/outfit/job/dalbarade/chief_engineer
 	name = dalbarade_OUTFIT_JOB_NAME("Chief Engineer")
-	uniform = /obj/item/clothing/under/rank/chief_engineer
 	glasses = /obj/item/clothing/glasses/welding/superior
 	suit = /obj/item/clothing/suit/storage/hazardvest
 	gloves = /obj/item/clothing/gloves/thick
-	shoes = /obj/item/clothing/shoes/workboots
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	l_hand = /obj/item/weapon/wrench
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/engineering/head
-	r_pocket = /obj/item/device/radio
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 /decl/hierarchy/outfit/job/dalbarade/doc
 	name = dalbarade_OUTFIT_JOB_NAME("Ship's Doc")
-	uniform = /obj/item/clothing/under/det/black
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
-	shoes = /obj/item/clothing/shoes/laceup
 	pda_type = /obj/item/modular_computer/pda/medical
 
 /decl/hierarchy/outfit/job/dalbarade/mate
 	name = dalbarade_OUTFIT_JOB_NAME("First Mate")
-	uniform = /obj/item/clothing/under/suit_jacket/checkered
-	shoes = /obj/item/clothing/shoes/laceup
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	pda_type = /obj/item/modular_computer/pda/cargo
 	l_hand = /obj/item/weapon/clipboard
 
 /decl/hierarchy/outfit/job/dalbarade/rd
 	name = OUTFIT_JOB_NAME("Research Director")
-	uniform = /obj/item/clothing/under/rank/research_director
-	shoes = /obj/item/clothing/shoes/brown
 	l_hand = /obj/item/weapon/clipboard
 	id_type = /obj/item/weapon/card/id/science/head
 	pda_type = /obj/item/modular_computer/pda/heads/rd
@@ -239,31 +230,20 @@
 
 /decl/hierarchy/outfit/job/dalbarade/pilot
 	name = dalbarade_OUTFIT_JOB_NAME("Pilot")
-	uniform = /obj/item/clothing/under/casual_pants/greyjeans
 	suit = /obj/item/clothing/suit/storage/toggle/brown_jacket
-	shoes = /obj/item/clothing/shoes/workboots
 	pda_type = /obj/item/modular_computer/pda/cargo
 
 /decl/hierarchy/outfit/job/dalbarade/mercenary
 	name = dalbarade_OUTFIT_JOB_NAME("Mercenary")
-	uniform = /obj/item/clothing/under/syndicate/combat
-	shoes = /obj/item/clothing/shoes/dutyboots
 	gloves = /obj/item/clothing/gloves/thick
 
 /decl/hierarchy/outfit/job/dalbarade/hand/engine
 	name = dalbarade_OUTFIT_JOB_NAME("Junior Engineer")
-	head = /obj/item/clothing/head/hardhat
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 /decl/hierarchy/outfit/job/dalbarade/miner
 	name = dalbarade_OUTFIT_JOB_NAME("Prospector")
-	uniform = /obj/item/clothing/under/rank/miner
 	id_type = /obj/item/weapon/card/id/cargo/mining
 	pda_type = /obj/item/modular_computer/pda/science
 	backpack_contents = list(/obj/item/weapon/crowbar = 1, /obj/item/weapon/storage/ore = 1)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
-
-/decl/hierarchy/outfit/job/dalbarade/hand/engine/pre_equip(mob/living/carbon/human/H)
-	..()
-	if(prob(50))
-		suit = /obj/item/clothing/suit/storage/hazardvest

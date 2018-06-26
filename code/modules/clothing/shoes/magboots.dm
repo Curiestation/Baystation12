@@ -89,3 +89,11 @@
 	if(item_flags & ITEM_FLAG_NOSLIP)
 		state = "enabled"
 	to_chat(user, "Its mag-pulse traction system appears to be [state].")
+
+/obj/item/clothing/shoes/magboots/soft
+	desc = "Fabric magnetic boots, often used on ships to facilitate navigation in the absence of gravity. They're not as strong as their metal counterparts. They're large enough to be worn over other footwear."
+	name = "soft magboots"
+	icon_state = "smagboots0"
+	force = 0
+	overshoes = 1
+	icon_base = "smagboots"
