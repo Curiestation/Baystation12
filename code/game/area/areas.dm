@@ -317,11 +317,11 @@ var/list/mob/living/forced_ambiance_list = new
 			if(H.m_intent == M_RUN)
 				H.AdjustStunned(6)
 				H.AdjustWeakened(6)
-				H.apply_damage(rand(5,10), BRUTE, pick(BP_R_ARM, BP_L_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_HEAD)
+				H.apply_damage(rand(5,10), BRUTE, pick(BP_R_ARM, BP_L_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_HEAD))
 			else
 				H.AdjustStunned(3)
 				H.AdjustWeakened(3)
-				H.apply_damage(rand(0,5), BRUTE, pick(BP_R_ARM, BP_L_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_HEAD)
+				H.apply_damage(rand(0,5), BRUTE, pick(BP_R_ARM, BP_L_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_HEAD))
 			to_chat(mob, "<span class='notice'>The sudden appearance of gravity makes you fall to the floor!</span>")
 
 /area/proc/prison_break()
