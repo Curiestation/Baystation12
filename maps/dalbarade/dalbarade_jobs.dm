@@ -105,6 +105,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/dalbarade/pilot
 	hud_icon = "hudcargotechnician"
 	access = list(access_heads)
+	minimal_access = list(access_heads)
 
 /datum/job/mercenary
 	title = "Mercenary"
@@ -197,6 +198,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	pda_type = /obj/item/modular_computer/pda/cargo
 	l_hand = /obj/item/weapon/clipboard
+	id_type = /obj/item/weapon/card/id/silver
 
 /decl/hierarchy/outfit/job/dalbarade/rd
 	name = OUTFIT_JOB_NAME("Research Director")
@@ -217,6 +219,7 @@
 	name = dalbarade_OUTFIT_JOB_NAME("Pilot")
 	suit = /obj/item/clothing/suit/storage/toggle/brown_jacket
 	pda_type = /obj/item/modular_computer/pda/cargo
+	id_type = /obj/item/weapon/card/id/cargo/head
 
 /decl/hierarchy/outfit/job/dalbarade/mercenary
 	name = dalbarade_OUTFIT_JOB_NAME("Mercenary")
