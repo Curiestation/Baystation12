@@ -176,17 +176,6 @@
 	pda_type = /obj/item/modular_computer/pda/captain
 	id_type = /obj/item/weapon/card/id/gold
 
-
-/decl/hierarchy/outfit/job/dalbarade/captain/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/toggleable/hawaii/random/eyegore = new()
-		if(uniform.can_attach_accessory(eyegore))
-			uniform.attach_accessory(null, eyegore)
-		else
-			qdel(eyegore)
-
 /decl/hierarchy/outfit/job/dalbarade/chief_engineer
 	name = dalbarade_OUTFIT_JOB_NAME("Chief Engineer")
 	glasses = /obj/item/clothing/glasses/welding/superior
@@ -219,10 +208,6 @@
 /decl/hierarchy/outfit/job/dalbarade/hand
 	name = dalbarade_OUTFIT_JOB_NAME("Deck Hand")
 
-/decl/hierarchy/outfit/job/dalbarade/hand/pre_equip(mob/living/carbon/human/H)
-	..()
-	uniform = pick(list(/obj/item/clothing/under/overalls,/obj/item/clothing/under/focal,/obj/item/clothing/under/hazard,/obj/item/clothing/under/rank/cargotech,/obj/item/clothing/under/color/black,/obj/item/clothing/under/color/grey,/obj/item/clothing/under/casual_pants/track, ))
-
 /decl/hierarchy/outfit/job/dalbarade/hand/cook
 	name = dalbarade_OUTFIT_JOB_NAME("Cook")
 	head = /obj/item/clothing/head/chefhat
@@ -240,6 +225,8 @@
 /decl/hierarchy/outfit/job/dalbarade/hand/engine
 	name = dalbarade_OUTFIT_JOB_NAME("Junior Engineer")
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
+	id_type = /obj/item/weapon/card/id/engineering/
+	belt = /obj/item/weapon/storage/belt/utility/full
 
 /decl/hierarchy/outfit/job/dalbarade/miner
 	name = dalbarade_OUTFIT_JOB_NAME("Prospector")
