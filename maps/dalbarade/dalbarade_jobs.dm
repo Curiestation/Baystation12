@@ -25,6 +25,7 @@
 /datum/job/captain
 	supervisors = "your conscience"
 	outfit_type = /decl/hierarchy/outfit/job/dalbarade/captain
+	skill_points = 30
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
 	. = ..()
@@ -70,6 +71,7 @@
 	supervisors = "the Captain"
 	department_flag = ENG
 	outfit_type = /decl/hierarchy/outfit/job/dalbarade/chief_engineer
+	skill_points = 30
 
 /datum/job/doctor
 	title = "Surgeon"
@@ -78,18 +80,21 @@
 	total_positions = 1
 	spawn_positions = 1
 	hud_icon = "hudmedicaldoctor"
+	skill_points = 28
 
 /datum/job/hop
 	title = "First Officer"
 	supervisors = "the Captain and your sense of morality"
 	outfit_type = /decl/hierarchy/outfit/job/dalbarade/mate
 	hud_icon = "hudheadofpersonnel"
+	skill_points = 28
 
 /datum/job/rd
 	title = "Science Officer"
 	supervisors = "the Captain and your curiosity"
 	outfit_type = /decl/hierarchy/outfit/job/dalbarade/rd
 	hud_icon = "hudresearchdirector"
+	skill_points = 28
 
 /datum/job/pilot
 	title = "Pilot"
@@ -106,6 +111,7 @@
 	hud_icon = "hudcargotechnician"
 	access = list(access_heads)
 	minimal_access = list(access_heads)
+	skill_points = 22
 
 /datum/job/mercenary
 	title = "Mercenary"
@@ -121,6 +127,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/dalbarade/mercenary
 	hud_icon = "hudcargotechnician"
 	access = list(access_armory)
+	skill_points = 22
 
 /datum/job/assistant
 	title = "Deck Hand"
@@ -139,6 +146,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	hud_icon = "hudengineer"
+	skill_points = 22
 
 /datum/job/mining
 	title = "Prospector"
@@ -152,6 +160,7 @@
 	minimal_player_age = 5
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/dalbarade/miner
+	skill_points = 22
 
 /datum/job/cyborg
 	supervisors = "your laws and the Captain"
