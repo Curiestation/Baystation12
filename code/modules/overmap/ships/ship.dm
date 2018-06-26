@@ -35,6 +35,7 @@
 		if (N.z in map_z)
 			N.linked = src
 			//testing("Navigation console at level [N.z] linked to overmap object '[name]'.")
+	update_gravity()
 	START_PROCESSING(SSobj, src)
 
 /obj/effect/overmap/ship/relaymove(mob/user, direction)
@@ -92,6 +93,7 @@
 		if (speed[2])
 			adjust_speed(0, -SIGN(speed[2]) * min(get_burn_acceleration(),abs(speed[2])))
 		last_burn = world.time
+	update_gravity()
 
 /obj/effect/overmap/ship/proc/accelerate(direction)
 	if(can_burn())
@@ -105,6 +107,7 @@
 			adjust_speed(0, get_burn_acceleration())
 		if(direction & SOUTH)
 			adjust_speed(0, -get_burn_acceleration())
+	update_gravity()
 
 /obj/effect/overmap/ship/Process()
 	if(!is_still())
@@ -126,6 +129,15 @@
 	else
 		icon_state = "ship"
 
+/obj/effect/overmap/ship/proc/update_gravity()
+	var/new_grav = is_still() ? 0 : 1
+	if(new_grav == gravity_is_on)
+		return
+	gravity_is_on = new_grav
+	for(var/area/A in world)
+		if((A.z in GLOB.using_map.station_levels) && initial(A.has_gravity))
+			A.gravitychange(gravity_is_on)
+
 /obj/effect/overmap/ship/proc/burn()
 	for(var/datum/ship_engine/E in engines)
 		. += E.burn()
@@ -139,7 +151,7 @@
 		return 0
 	for(var/datum/ship_engine/E in engines)
 		. |= E.can_burn()
-		
+
 //deciseconds to next step
 /obj/effect/overmap/ship/proc/ETA()
 	. = INFINITY
