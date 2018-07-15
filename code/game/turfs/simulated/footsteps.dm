@@ -7,6 +7,7 @@
 #define FOOTSTEP_WATER		"water"
 #define FOOTSTEP_BLANK		"blank"
 #define FOOTSTEP_CATWALK	"catwalk"
+#define FOOTSTEP_LAVA		"lava"
 
 /turf/simulated/floor/var/global/list/footstep_sounds = list(
 	FOOTSTEP_WOOD = list(
@@ -49,6 +50,10 @@
 		'sound/effects/footstep/water2.ogg',
 		'sound/effects/footstep/water3.ogg',
 		'sound/effects/footstep/water4.ogg'),
+	FOOTSTEP_LAVA = list(
+		'sound/effects/footstep/lava1.ogg',
+		'sound/effects/footstep/lava2.ogg',
+		'sound/effects/footstep/lava3.ogg'),
 	FOOTSTEP_BLANK = list(
 		'sound/effects/footstep/blank.ogg')
 )
@@ -103,7 +108,7 @@
 	if(buckled || lying || throwing)
 		return //people flying, lying down or sitting do not step
 
-	if(m_intent == M_RUN)
+	if(MOVING_QUICKLY(src))
 		if(step_count % 2) //every other turf makes a sound
 			return
 
@@ -129,7 +134,7 @@
 	if(footsound)
 		var/range = -(world.view - 2)
 		var/volume = 70
-		if(m_intent == M_WALK)
+		if(MOVING_DELIBERATELY(src))
 			volume -= 45
 			range -= 0.333
 		if(!shoes)

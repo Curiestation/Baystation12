@@ -4,12 +4,7 @@
 	description = "Bunch of monoliths surrounding an artifact."
 	suffixes = list("monoliths/monoliths.dmm")
 	cost = 1
-	allow_duplicates = FALSE
-
-/area/map_template/monolith
-	name = "Monolith Ring"
-	icon = 'icons/obj/monolith.dmi'
-	icon_state = "jaggy1"
+	template_flags = TEMPLATE_FLAG_NO_RUINS
 
 /obj/structure/monolith
 	name = "monolith"
@@ -25,7 +20,7 @@
 /obj/structure/monolith/Initialize()
 	. = ..()
 	icon_state = "jaggy[rand(1,4)]"
-	var/material/A = get_material_by_name("alien alloy")
+	var/material/A = get_material_by_name("aliumium")
 	if(A)
 		color = A.icon_colour
 	if(GLOB.using_map.use_overmap)
