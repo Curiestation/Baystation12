@@ -1608,7 +1608,10 @@
 /turf/simulated/floor/tiled,
 /area/ship/curie/shuttle/lift)
 "dn" = (
-/obj/structure/sign/warning/moving_parts,
+/obj/structure/sign/warning/moving_parts{
+	icon_state = "movingparts";
+	dir = 8
+	},
 /turf/simulated/wall,
 /area/ship/curie/cargo)
 "do" = (
@@ -3230,12 +3233,12 @@
 /turf/simulated/floor,
 /area/ship/curie/shuttle/outgoing)
 "gu" = (
-/obj/structure/bed/chair{
-	icon_state = "chair_preview";
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
+	dir = 4
+	},
+/obj/structure/bed/chair/shuttle/blue{
+	icon_state = "shuttle_chair_preview";
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -3936,8 +3939,8 @@
 /turf/simulated/wall/titanium,
 /area/ship/curie/shuttle/outgoing)
 "hJ" = (
-/obj/structure/bed/chair{
-	icon_state = "chair_preview";
+/obj/structure/bed/chair/shuttle/blue{
+	icon_state = "shuttle_chair_preview";
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -4070,8 +4073,8 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/obj/structure/bed/chair{
-	icon_state = "chair_preview";
+/obj/structure/bed/chair/shuttle/blue{
+	icon_state = "shuttle_chair_preview";
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -4300,13 +4303,6 @@
 /obj/structure/window/reinforced,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/ship/curie/shuttle/outgoing)
-"iz" = (
-/obj/structure/bed/chair/office/light{
-	icon_state = "officechair_white_preview";
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
 /area/ship/curie/shuttle/outgoing)
 "iA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -4720,6 +4716,27 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/curie/cargo)
+"pn" = (
+/obj/structure/sign/warning/moving_parts{
+	icon_state = "movingparts";
+	dir = 4
+	},
+/turf/simulated/wall,
+/area/ship/curie/cargo)
+"xe" = (
+/obj/structure/sign/warning/nosmoking_1{
+	icon_state = "nosmoking";
+	dir = 1
+	},
+/turf/simulated/wall,
+/area/ship/curie/command/bridge)
+"xG" = (
+/obj/structure/sign/warning/nosmoking_1{
+	icon_state = "nosmoking";
+	dir = 1
+	},
+/turf/simulated/wall,
+/area/ship/curie/refinery)
 
 (1,1,1) = {"
 aa
@@ -11620,7 +11637,7 @@ eF
 eK
 gI
 eN
-cw
+xG
 gl
 cM
 cV
@@ -12098,7 +12115,7 @@ cd
 ch
 cc
 cq
-ax
+xe
 ed
 el
 eo
@@ -12236,7 +12253,7 @@ gQ
 cS
 dg
 dj
-dn
+pn
 dj
 kj
 ki
@@ -12855,7 +12872,7 @@ gh
 bh
 gz
 hM
-iz
+hJ
 iH
 bd
 jg

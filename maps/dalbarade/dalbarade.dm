@@ -14,7 +14,6 @@
 	#include "../away/mining/mining.dm"
 	#include "../away/derelict/derelict.dm"
 	#include "../away/lost_supply_base/lost_supply_base.dm"
-	#include "../away/marooned/marooned.dm"
 	#include "../away/smugglers/smugglers.dm"
 	#include "../away/magshield/magshield.dm"
 	#include "../away/casino/casino.dm"

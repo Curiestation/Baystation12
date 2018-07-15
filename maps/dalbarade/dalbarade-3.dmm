@@ -65,7 +65,7 @@
 /area/ship/curie/command/pilot)
 "am" = (
 /obj/machinery/computer/engines,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/command/pilot)
 "an" = (
 /turf/simulated/floor/reinforced/airless,
@@ -163,7 +163,7 @@
 /area/ship/curie/maintenance/power)
 "ay" = (
 /obj/machinery/computer/helm,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/command/pilot)
 "az" = (
 /obj/structure/table/standard,
@@ -185,11 +185,11 @@
 /area/ship/curie/command/pilot)
 "aA" = (
 /obj/item/modular_computer/console/preset/command,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/command/pilot)
 "aB" = (
 /obj/machinery/computer/sensors,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/command/pilot)
 "aC" = (
 /obj/effect/floor_decal/corner/yellow{
@@ -378,16 +378,16 @@
 /area/ship/curie/comms)
 "aX" = (
 /obj/effect/floor_decal/spline/plain/black,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/command/pilot)
 "aY" = (
-/obj/structure/bed/chair/office/dark{
-	icon_state = "officechair_dark_preview";
-	dir = 1
-	},
 /obj/effect/floor_decal/spline/plain/black,
 /obj/structure/window/reinforced,
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/shuttle/blue{
+	icon_state = "shuttle_chair_preview";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/command/pilot)
 "aZ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -1971,7 +1971,7 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/command/pilot)
 "en" = (
 /obj/machinery/computer/account_database,
@@ -2065,10 +2065,6 @@
 /turf/simulated/wall,
 /area/ship/curie/command/captain)
 "ez" = (
-/obj/structure/bed/chair/office/dark{
-	icon_state = "officechair_dark_preview";
-	dir = 4
-	},
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
@@ -2076,6 +2072,10 @@
 	},
 /obj/effect/landmark/start{
 	name = "Captain"
+	},
+/obj/structure/bed/chair/office/dark{
+	icon_state = "officechair_preview";
+	dir = 4
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/ship/curie/command/captain)
@@ -2378,16 +2378,16 @@
 /turf/simulated/open,
 /area/ship/curie/command/pilot)
 "fk" = (
-/obj/structure/bed/chair/office/dark{
-	icon_state = "officechair_dark_preview";
-	dir = 1
-	},
 /obj/effect/floor_decal/spline/plain/black,
 /obj/structure/window/reinforced,
 /obj/effect/landmark/start{
 	name = "First Officer"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/shuttle/blue{
+	icon_state = "shuttle_chair_preview";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/curie/command/pilot)
 "fp" = (
 /turf/simulated/wall/r_wall/hull,

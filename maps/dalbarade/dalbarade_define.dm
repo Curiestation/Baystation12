@@ -57,8 +57,8 @@
 
 /datum/map/dalbarade/setup_map()
 	..()
-	GLOB.traders += new /datum/trader/xeno_shop
-	GLOB.traders += new /datum/trader/medical
-	GLOB.traders += new /datum/trader/mining
-	GLOB.traders += new /datum/trader/ship/electronics
+	SStrade.traders += new /datum/trader/xeno_shop
+	SStrade.traders += new /datum/trader/medical
+	SStrade.traders += new /datum/trader/mining
+	SStrade.traders += new /datum/trader/ship/electronics
 
