@@ -46,7 +46,7 @@
 	speed_mod = 0.1 MINUTE
 	burn_delay = 10 SECONDS
 
-	generic_waypoints = list("nav_dalbarade_stern_dock_shuttle", "nav_dalbarade_cargo_starboard_shuttle")
+	initial_generic_waypoints = list("nav_dalbarade_stern_dock_shuttle", "nav_dalbarade_cargo_starboard_shuttle")
 
 
 /datum/shuttle/autodock/ferry/lift
